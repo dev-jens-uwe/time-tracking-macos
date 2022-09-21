@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B43F7C9628DB6C49006C0914 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F7C9528DB6C49006C0914 /* EventBus.swift */; };
+		B43F7C9828DB6D6B006C0914 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F7C9728DB6D6B006C0914 /* Event.swift */; };
+		B43F7C9B28DB6FDB006C0914 /* ActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F7C9A28DB6FDB006C0914 /* ActionCreator.swift */; };
+		B43F7C9D28DB70DE006C0914 /* TimerStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F7C9C28DB70DE006C0914 /* TimerStarted.swift */; };
+		B43F7C9F28DB77A3006C0914 /* TimerEnded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F7C9E28DB77A3006C0914 /* TimerEnded.swift */; };
 		B469165028D9E6B7004FE38F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469164F28D9E6B7004FE38F /* AppDelegate.swift */; };
 		B469165228D9E6B7004FE38F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469165128D9E6B7004FE38F /* ContentView.swift */; };
 		B469165428D9E6B8004FE38F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B469165328D9E6B8004FE38F /* Assets.xcassets */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B43F7C9528DB6C49006C0914 /* EventBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBus.swift; sourceTree = "<group>"; };
+		B43F7C9728DB6D6B006C0914 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		B43F7C9A28DB6FDB006C0914 /* ActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCreator.swift; sourceTree = "<group>"; };
+		B43F7C9C28DB70DE006C0914 /* TimerStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStarted.swift; sourceTree = "<group>"; };
+		B43F7C9E28DB77A3006C0914 /* TimerEnded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEnded.swift; sourceTree = "<group>"; };
 		B469164C28D9E6B7004FE38F /* TimeTracker-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TimeTracker-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B469164F28D9E6B7004FE38F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B469165128D9E6B7004FE38F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +86,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B43F7C9428DB6C36006C0914 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				B43F7C9928DB6FC6006C0914 /* Action */,
+				B43F7C9528DB6C49006C0914 /* EventBus.swift */,
+				B43F7C9728DB6D6B006C0914 /* Event.swift */,
+				B43F7C9A28DB6FDB006C0914 /* ActionCreator.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		B43F7C9928DB6FC6006C0914 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				B43F7C9C28DB70DE006C0914 /* TimerStarted.swift */,
+				B43F7C9E28DB77A3006C0914 /* TimerEnded.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
 		B469164328D9E6B7004FE38F = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +129,7 @@
 		B469164E28D9E6B7004FE38F /* TimeTracker-Client */ = {
 			isa = PBXGroup;
 			children = (
+				B43F7C9428DB6C36006C0914 /* Event */,
 				B469168128D9EB6B004FE38F /* View */,
 				B469164F28D9E6B7004FE38F /* AppDelegate.swift */,
 				B469165128D9E6B7004FE38F /* ContentView.swift */,
@@ -274,8 +305,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B469165228D9E6B7004FE38F /* ContentView.swift in Sources */,
+				B43F7C9628DB6C49006C0914 /* EventBus.swift in Sources */,
+				B43F7C9D28DB70DE006C0914 /* TimerStarted.swift in Sources */,
 				B469165028D9E6B7004FE38F /* AppDelegate.swift in Sources */,
 				B469168328D9EBA4004FE38F /* Menu.swift in Sources */,
+				B43F7C9B28DB6FDB006C0914 /* ActionCreator.swift in Sources */,
+				B43F7C9F28DB77A3006C0914 /* TimerEnded.swift in Sources */,
+				B43F7C9828DB6D6B006C0914 /* Event.swift in Sources */,
 				B469167B28D9E73E004FE38F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
