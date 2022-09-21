@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B469165028D9E6B7004FE38F /* TimeTracker_ClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469164F28D9E6B7004FE38F /* TimeTracker_ClientApp.swift */; };
+		B469165028D9E6B7004FE38F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469164F28D9E6B7004FE38F /* AppDelegate.swift */; };
 		B469165228D9E6B7004FE38F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469165128D9E6B7004FE38F /* ContentView.swift */; };
 		B469165428D9E6B8004FE38F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B469165328D9E6B8004FE38F /* Assets.xcassets */; };
 		B469165728D9E6B8004FE38F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B469165628D9E6B8004FE38F /* Preview Assets.xcassets */; };
 		B469166228D9E6B8004FE38F /* TimeTracker_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469166128D9E6B8004FE38F /* TimeTracker_ClientTests.swift */; };
 		B469166C28D9E6B8004FE38F /* TimeTracker_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469166B28D9E6B8004FE38F /* TimeTracker_ClientUITests.swift */; };
 		B469166E28D9E6B8004FE38F /* TimeTracker_ClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469166D28D9E6B8004FE38F /* TimeTracker_ClientUITestsLaunchTests.swift */; };
+		B469167B28D9E73E004FE38F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469167A28D9E73E004FE38F /* main.swift */; };
+		B469168328D9EBA4004FE38F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469168228D9EBA4004FE38F /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		B469164C28D9E6B7004FE38F /* TimeTracker-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TimeTracker-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B469164F28D9E6B7004FE38F /* TimeTracker_ClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTracker_ClientApp.swift; sourceTree = "<group>"; };
+		B469164F28D9E6B7004FE38F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B469165128D9E6B7004FE38F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B469165328D9E6B8004FE38F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B469165628D9E6B8004FE38F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		B469166728D9E6B8004FE38F /* TimeTracker-ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TimeTracker-ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B469166B28D9E6B8004FE38F /* TimeTracker_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTracker_ClientUITests.swift; sourceTree = "<group>"; };
 		B469166D28D9E6B8004FE38F /* TimeTracker_ClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTracker_ClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B469167A28D9E73E004FE38F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B469168228D9EBA4004FE38F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +99,13 @@
 		B469164E28D9E6B7004FE38F /* TimeTracker-Client */ = {
 			isa = PBXGroup;
 			children = (
-				B469164F28D9E6B7004FE38F /* TimeTracker_ClientApp.swift */,
+				B469168128D9EB6B004FE38F /* View */,
+				B469164F28D9E6B7004FE38F /* AppDelegate.swift */,
 				B469165128D9E6B7004FE38F /* ContentView.swift */,
 				B469165328D9E6B8004FE38F /* Assets.xcassets */,
 				B469165828D9E6B8004FE38F /* TimeTracker_Client.entitlements */,
 				B469165528D9E6B8004FE38F /* Preview Content */,
+				B469167A28D9E73E004FE38F /* main.swift */,
 			);
 			path = "TimeTracker-Client";
 			sourceTree = "<group>";
@@ -127,6 +133,14 @@
 				B469166D28D9E6B8004FE38F /* TimeTracker_ClientUITestsLaunchTests.swift */,
 			);
 			path = "TimeTracker-ClientUITests";
+			sourceTree = "<group>";
+		};
+		B469168128D9EB6B004FE38F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B469168228D9EBA4004FE38F /* Menu.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B469165228D9E6B7004FE38F /* ContentView.swift in Sources */,
-				B469165028D9E6B7004FE38F /* TimeTracker_ClientApp.swift in Sources */,
+				B469165028D9E6B7004FE38F /* AppDelegate.swift in Sources */,
+				B469168328D9EBA4004FE38F /* Menu.swift in Sources */,
+				B469167B28D9E73E004FE38F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
